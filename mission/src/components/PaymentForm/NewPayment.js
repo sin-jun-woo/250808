@@ -22,9 +22,10 @@ const NewPayment = (props) => {
       {/* 
         PaymentForm 컴포넌트를 렌더링합니다.
         🚨 문제점: 부모(App.js)에서 NewPayment로 전달된 props(예: getPaymentFormData)가
-        자식인 PaymentForm으로 전달되지 않고 있습니다.
+        자식인 PaymentForm으로 전달되지 않고 있습니다. 
+        해결: {...props} 구문을 사용하여 NewPayment가 받은 모든 props를 PaymentForm으로 전달합니다.
       */}
-      <PaymentForm />
+      <PaymentForm {...props} />
     </div>
   );
 };

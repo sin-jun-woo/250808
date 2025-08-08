@@ -4,8 +4,8 @@
 import { useState } from "react";
 // 2. 이 컴포넌트에 적용될 CSS 파일을 가져옵니다.
 import "./App.css";
-// 3. 새로운 지출 항목을 추가하는 폼 컴포넌트를 가져옵니다.
-import PaymentForm from "./components/PaymentForm/PaymentForm";
+// 3. 새로운 지출 항목을 추가하는 폼을 감싸는 컨테이너 컴포넌트를 가져옵니다.
+import NewPayment from "./components/PaymentForm/NewPayment";
 // 4. 지출 목록을 표시하는 컴포넌트를 가져옵니다.
 import Expenses from "./components/Payments/Expenses";
 
@@ -69,9 +69,9 @@ function App() {
   return (
     // React.Fragment(<></>)를 사용하여 여러 컴포넌트를 감쌉니다.
     <>
-      {/* 8. PaymentForm 컴포넌트를 렌더링하고,
+      {/* 8. NewPayment 컴포넌트를 렌더링하고,
           새로운 지출 데이터를 부모(App)로 전달할 수 있도록 `getPaymentFormData` 함수를 prop으로 넘겨줍니다. */}
-      <PaymentForm getPaymentFormData={getPaymentFormData} />
+      <NewPayment getPaymentFormData={getPaymentFormData} />
       {/* 9. Expenses 컴포넌트를 렌더링하고,
           화면에 표시할 지출 목록 데이터(`expenses` 상태)를 `items`라는 prop으로 넘겨줍니다. */}
       <Expenses items={expenses} />
