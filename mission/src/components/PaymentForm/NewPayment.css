@@ -1,0 +1,66 @@
+/* /Users/shin-junwoo/슈퍼코딩/코드 설명/250808/src/components/PaymentForm/NewPayment.css */
+
+/* 'new-payment' 클래스를 가진 요소(폼 전체 컨테이너)에 대한 스타일입니다. */
+.new-payment {
+  /* 배경색을 연한 보라색 계열로 설정합니다. */
+  background-color: #a892ee;
+  /* 안쪽 여백을 사방으로 1rem 줍니다. */
+  padding: 1rem;
+  /* 위아래 바깥 여백은 2rem, 좌우는 auto로 설정하여 수평 중앙 정렬합니다. */
+  margin: 2rem auto;
+  /* 너비를 50rem으로 고정합니다. */
+  width: 50rem;
+  /* 최대 너비를 95%로 제한하여, 작은 화면에서도 컨테이너가 화면 밖으로 나가지 않도록 합니다. (반응형 디자인) */
+  max-width: 95%;
+  /* 모서리를 12px만큼 둥글게 만듭니다. */
+  border-radius: 12px;
+  /* 내부 텍스트와 인라인 요소들을 중앙 정렬합니다. */
+  text-align: center;
+  /* 요소에 그림자 효과를 주어 입체감을 더합니다. */
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* 'new-payment' 내부의 모든 <button> 태그에 대한 기본 스타일입니다. */
+.new-payment button {
+  /* 폰트 관련 속성을 부모로부터 상속받아 페이지 전체와 일관성을 유지합니다. */
+  font: inherit;
+  /* 마우스를 올렸을 때 손가락 모양 커서로 변경하여 클릭 가능함을 알립니다. */
+  cursor: pointer;
+  /* 안쪽 여백을 위아래 1rem, 좌우 2rem으로 넉넉하게 설정합니다. */
+  padding: 1rem 2rem;
+  /* 1px 두께의 진한 보라색 실선 테두리를 설정합니다. */
+  border: 1px solid #40005d;
+  /* 배경색을 진한 보라색으로 설정합니다. (Primary Button) */
+  background-color: #40005d;
+  /* 글자색을 흰색으로 설정합니다. */
+  color: white;
+  /* 모서리를 12px만큼 둥글게 만듭니다. */
+  border-radius: 12px;
+  /* 오른쪽 버튼과의 간격을 위해 1rem의 바깥 여백을 줍니다. */
+  margin-right: 1rem;
+}
+
+/* 마우스를 올리거나(hover) 클릭했을 때(active)의 버튼 스타일입니다. */
+.new-payment button:hover,
+.new-payment button:active {
+  /* 배경색과 테두리 색을 약간 더 진하게 변경하여 사용자에게 시각적 피드백을 줍니다. */
+  background-color: #510674;
+  border-color: #510674;
+}
+
+/* 'alternative' 클래스가 추가된 버튼에 대한 스타일입니다. (BEM 수정자) */
+.new-payment button.alternative {
+  /* 글자색을 더 어두운 보라색으로 변경합니다. */
+  color: #220131;
+  /* 테두리를 투명하게 만듭니다. */
+  border-color: transparent;
+  /* 배경색을 투명하게 만듭니다. (Secondary/Ghost Button) */
+  background-color: transparent;
+}
+
+/* 'alternative' 버튼에 마우스를 올리거나 클릭했을 때의 스타일입니다. */
+.new-payment button.alternative:hover,
+.new-payment button.alternative:active {
+  /* 배경색을 매우 연한 보라색으로 변경하여 피드백을 줍니다. */
+  background-color: #ddb3f8;
+}
