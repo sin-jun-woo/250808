@@ -1,0 +1,43 @@
+/* /Users/shin-junwoo/슈퍼코딩/코드 설명/250808/src/components/Payments/ExpenseDate.css */
+
+/* 'expense-date' 클래스를 가진 요소(날짜 전체 컨테이너)에 대한 스타일입니다. */
+.expense-date {
+  /* 자식 요소(월, 연, 일)를 세로로 배치하기 위해 flexbox를 사용합니다. */
+  display: flex;
+  flex-direction: column;
+  /* 너비와 높이를 5.5rem으로 고정하여 정사각형 모양을 만듭니다. */
+  width: 5.5rem;
+  height: 5.5rem;
+  /* 1px 두께의 연한 회색 실선 테두리를 추가합니다. */
+  border: 1px solid #ececec;
+  /* 배경색을 어두운 회색(#2a2a2a)으로 설정합니다. */
+  background-color: #2a2a2a;
+  /* 내부 텍스트 색상을 흰색으로 지정합니다. */
+  color: white;
+  /* 모서리를 12px만큼 둥글게 만듭니다. */
+  border-radius: 12px;
+  /* 자식 요소들을 교차 축(가로)에서 중앙에 정렬합니다. */
+  align-items: center;
+  /* 자식 요소들을 주 축(세로)에서 중앙에 정렬합니다. */
+  justify-content: center;
+}
+
+/* 'expense-date__month' 클래스를 가진 요소(월)에 대한 스타일입니다. */
+.expense-date__month {
+  /* 글자 크기를 0.75rem으로 설정합니다. */
+  font-size: 0.75rem;
+  /* 글자를 굵게 만듭니다. */
+  font-weight: bold;
+}
+
+/* 'expense-date__year' 클래스를 가진 요소(연도)에 대한 스타일입니다. */
+.expense-date__year {
+  font-size: 0.75rem;
+}
+
+/* 'expense-date__day' 클래스를 가진 요소(일)에 대한 스타일입니다. */
+.expense-date__day {
+  /* 글자 크기를 1.5rem으로 설정하여 가장 눈에 띄게 만듭니다. */
+  font-size: 1.5rem;
+  font-weight: bold;
+}

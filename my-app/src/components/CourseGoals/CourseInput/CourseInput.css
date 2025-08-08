@@ -1,0 +1,53 @@
+/* /Users/shin-junwoo/슈퍼코딩/코드 설명/250808/my-app/src/components/CourseGoals/CourseInput/CourseInput.css */
+
+/* 'form-control' 클래스를 가진 요소(레이블과 입력 필드를 감싸는 컨테이너)에 대한 스타일입니다. */
+.form-control {
+  /* 위아래로 0.5rem의 바깥 여백을 줍니다. */
+  margin: 0.5rem 0;
+}
+
+/* 'form-control' 내부의 <label> 태그에 대한 스타일입니다. */
+.form-control label {
+  /* 글자를 굵게 만듭니다. */
+  font-weight: bold;
+  /* 레이블을 블록 레벨 요소로 만들어 한 줄을 모두 차지하게 합니다. */
+  display: block;
+  /* 레이블 아래에 0.5rem의 바깥 여백을 주어 입력 필드와 간격을 둡니다. */
+  margin-bottom: 0.5rem;
+}
+
+/* 'form-control' 내부의 <input> 태그에 대한 스타일입니다. */
+.form-control input {
+  display: block;
+  /* 너비를 부모 요소의 100%로 설정합니다. */
+  width: 100%;
+  /* 1px 두께의 연한 회색 실선 테두리를 설정합니다. */
+  border: 1px solid #ccc;
+  /* 폰트 관련 속성을 부모로부터 상속받아 페이지 전체와 일관성을 유지합니다. */
+  font: inherit;
+  /* 줄 높이를 1.5rem으로 설정합니다. */
+  line-height: 1.5rem;
+  /* 안쪽 여백을 좌우에만 0.25rem 줍니다. */
+  padding: 0 0.25rem;
+}
+
+/* 입력 필드가 포커스되었을 때(사용자가 클릭하거나 Tab으로 선택했을 때)의 스타일입니다. */
+.form-control input:focus {
+  /* 브라우저의 기본 포커스 윤곽선을 제거합니다. */
+  outline: none;
+  /* 주석 처리된 코드: 포커스 시 배경색을 변경하는 다른 스타일 옵션 */
+  /* background: #fad0ec; */
+  /* 포커스 상태임을 명확히 보여주기 위해 테두리 색을 파란색으로 변경합니다. */
+  border-color: blue;
+}
+
+/* 
+  'form-control'과 'invalid' 클래스를 동시에 가진 요소 내부의 <input> 태그에 대한 스타일입니다.
+  이것은 입력 값이 유효하지 않을 때 적용되는 에러 상태 스타일입니다.
+*/
+.form-control.invalid input {
+  /* 배경색을 연한 빨간색(salmon)으로 변경하여 에러 상태임을 시각적으로 알립니다. */
+  background-color: salmon;
+  /* 테두리 색도 빨간색으로 변경하여 강조합니다. */
+  border-color: red;
+}

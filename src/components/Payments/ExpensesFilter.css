@@ -1,0 +1,45 @@
+/* /Users/shin-junwoo/슈퍼코딩/코드 설명/250808/src/components/Payments/ExpensesFilter.css */
+
+/* 'expenses-filter' 클래스를 가진 전체 컨테이너에 대한 스타일입니다. */
+.expenses-filter {
+  /* 내부 텍스트 색상을 검은색으로 지정합니다. */
+  color: black;
+  /* 위아래 여백은 없고, 좌우에 1rem(보통 16px)의 안쪽 여백을 줍니다. */
+  padding: 0 1rem;
+}
+
+/* 'expenses-filter__control' 클래스를 가진 요소(레이블과 드롭다운을 감싸는 div)에 대한 스타일입니다. */
+.expenses-filter__control {
+  /* 자식 요소(label, select)를 가로로 배치하기 위해 flexbox를 사용합니다. */
+  display: flex;
+  /* 요소의 너비를 부모 요소에 꽉 채웁니다. */
+  width: 100%;
+  /* 자식 요소들을 세로 방향에서 중앙에 정렬합니다. */
+  align-items: center;
+  /* 자식 요소들을 양쪽 끝으로 정렬합니다. (레이블은 왼쪽, 드롭다운은 오른쪽) */
+  justify-content: space-between;
+  /* 위아래에 1rem의 바깥 여백을 줍니다. */
+  margin: 1rem 0;
+}
+
+/* 'expenses-filter' 내부의 <label> 태그에 대한 스타일입니다. */
+.expenses-filter label {
+  /* 글자를 굵게 만듭니다. */
+  font-weight: bold;
+  /* 요소 아래쪽에 0.5rem의 바깥 여백을 줍니다. */
+  /* (참고: 부모가 flex-direction: row 이므로 이 여백은 시각적으로 큰 영향을 주지 않을 수 있습니다.) */
+  margin-bottom: 0.5rem;
+}
+
+/* 'expenses-filter' 내부의 <select> 태그(드롭다운 메뉴)에 대한 스타일입니다. */
+.expenses-filter select {
+  /* 폰트 관련 속성(font-family, font-size 등)을 부모 요소로부터 상속받습니다. */
+  /* 이를 통해 페이지 전체의 폰트 스타일과 일관성을 유지할 수 있습니다. */
+  font: inherit;
+  /* 위아래 0.5rem, 좌우 3rem의 넉넉한 안쪽 여백을 줍니다. */
+  padding: 0.5rem 3rem;
+  /* 글자를 굵게 만듭니다. */
+  font-weight: bold;
+  /* 모서리를 6px만큼 둥글게 만듭니다. */
+  border-radius: 6px;
+}
